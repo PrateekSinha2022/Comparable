@@ -30,6 +30,8 @@ public class BookDriver {
 		Arrays.sort(arr,sbt);
 		display(arr);
 		
+		throw new InvalidInput();
+		
 	}
 
 }
