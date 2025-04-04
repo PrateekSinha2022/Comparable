@@ -24,12 +24,7 @@ public class Student implements Comparable{
 	{
 		Student s = (Student)o;
 		
-		if(this.id>s.id)
-			return 1;
-		else if(this.id<s.id)
-			return -1;
-		else
-			return 0;
+		return Double.compare(this.marks, s.marks);
 	}
 
 }
