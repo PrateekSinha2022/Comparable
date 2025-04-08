@@ -188,4 +188,18 @@ public class DoublyLL {
 				
 		}
 	}
+	
+	public void displayrev()
+	{
+		StringBuilder sb=new StringBuilder("[");
+		Node temp=tail;
+		while(temp!=null)
+		{
+			sb.append(temp==head?temp.value:temp.value+",");
+			temp=temp.prev;
+		}
+		sb.append("]");
+		System.out.println(sb);
+	}
+	
 }

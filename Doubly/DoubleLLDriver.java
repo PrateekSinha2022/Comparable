@@ -10,6 +10,7 @@ public class DoubleLLDriver {
 		list.display();
 		list.update(2, 100);
 		list.display();
+		list.displayrev();
 		
 	}
 
