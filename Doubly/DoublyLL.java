@@ -119,8 +119,42 @@ public class DoublyLL {
 		else
 		{
 			head=head.next;
+			head.prev=null;
 		}
 		size--;
 		return true;
+	}
+	
+	public void deleteLast()
+	{
+		Node temp=head;
+		while(temp.next.next!=null)
+		{
+			temp=temp.next;
+		}
+		temp.next=null;
+		tail=temp;
+		size--;
+	}
+	
+	public void delete(int pos)
+	{
+		if(pos==0)
+			deleteAtFirst();
+		else if(pos==size-1)
+			deleteLast();
+		else
+		{
+			int c=0;
+			Node temp=head;
+			while(c<pos-1)
+			{
+				c++;
+				temp=temp.next;
+			}
+			temp.next.next.prev=temp;
+			temp.next=temp.next.next;
+			size--;
+		}
 	}
 }
