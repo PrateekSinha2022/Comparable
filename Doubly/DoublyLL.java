@@ -157,4 +157,35 @@ public class DoublyLL {
 			size--;
 		}
 	}
+	
+	public int search(int value)
+	{
+		int res=-1;
+		Node temp=head;
+		while(temp!=null)
+		{
+			if(temp.value==value)
+				return 1;
+			temp=temp.next;
+			
+		}
+		return -1;
+	}
+	
+	public void update(int pos,int value)
+	{
+		Node temp=head;
+		int c=0;
+		while(temp!=null)
+		{
+			if(c==pos)
+			{
+				temp.value=value;
+				break;
+			}
+			temp=temp.next;
+			c++;
+				
+		}
+	}
 }

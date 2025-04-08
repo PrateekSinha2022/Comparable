@@ -8,7 +8,7 @@ public class DoubleLLDriver {
 		list.append(50);
 		list.append(60);
 		list.display();
-		list.delete(0);
+		list.update(2, 100);
 		list.display();
 		
 	}
