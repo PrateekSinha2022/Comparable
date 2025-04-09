@@ -29,7 +29,7 @@ public class SllDriver {
 		list.update(2,500 );
 		list.display();
 		
-		System.out.println(list.search(500));
+		System.out.println(list.get(1));
 		
 		
 	}

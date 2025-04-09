@@ -9,7 +9,7 @@ public class StackDriver {
 		stack.push(10);
 		stack.push(20);
 		//stack.display();
-		//stack.pop();
+		stack.pop();
 		stack.peep();
 	}
 

@@ -131,6 +131,20 @@ public class Sll {
 		temp.value=value;
 	}
 	
+	public int get(int index)
+	{
+		if(index<0||index>=size)
+			throw new NullPointerException();
+		Node temp=head;
+		int i=0;
+		while(i<index)
+		{
+			temp=temp.next;
+			i++;
+		}
+		return temp.value;
+	}
+	
 	public int search(int val)
 	{
 		Node temp=head;
