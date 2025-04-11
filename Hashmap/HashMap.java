@@ -24,7 +24,7 @@ public class HashMap {
 		int bi = hashFunction(key);
 		int di  = getDataIndex(bi,key);
 		
-		if(bi!=-1)
+		if(di!=-1)
 		{
 			buckets[bi].get(di).value=value;
 		}
