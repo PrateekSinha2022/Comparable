@@ -11,6 +11,8 @@ public class HashMApDriver {
 		h.put(2, "kol");
 		h.display();
 		System.out.println(h.size());
+		System.out.println(h.get(2));
+		System.out.println(h.containsKey(3));
 	}
 
 }

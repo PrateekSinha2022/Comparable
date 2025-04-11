@@ -106,6 +106,26 @@ public class HashMap {
 		return n;
 	}
 	
+	public String get(int key)
+	{
+		int bi = hashFunction(key);
+		int di  = getDataIndex(bi,key);
+		if(di==-1)
+			return null;
+		else
+			return buckets[bi].get(di).value;
+	}
+	
+	public boolean containsKey(int key)
+	{
+		int bi = hashFunction(key);
+		int di  = getDataIndex(bi,key);
+		if(di==-1)
+			return false;
+		else
+			return true;
+	}
+	
 	private class Node
 	{
 		int key;
