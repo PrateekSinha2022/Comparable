@@ -49,6 +49,11 @@ public class HashMap {
 		N=buckets.length;
 		n=0;
 		
+		for(int i=0;i<buckets.length;i++)
+		{
+			buckets[i]=new LinkedList<>();
+		}
+		
 		for(int i=0;i<old.length;i++)
 		{
 			LinkedList<Node> list=old[i];
@@ -81,6 +86,24 @@ public class HashMap {
 			}
 		}
 		return -1;
+	}
+	
+	public void display()
+	{
+		for(int i=0;i<buckets.length;i++)
+		{
+			LinkedList<Node> l=buckets[i];
+			for(int j=0;j<l.size();j++)
+			{
+				Node node=l.get(j);
+				System.out.println(node.key+":"+node.value);
+			}
+		}
+	}
+	
+	public int size()
+	{
+		return n;
 	}
 	
 	private class Node
