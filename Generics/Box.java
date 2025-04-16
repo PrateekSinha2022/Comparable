@@ -18,7 +18,7 @@ public class Box<T> {
 		Box<Integer> b1= new Box<Integer>(10);
 		Box<?> b2=b1;
 		Box<? extends Object> b3=b1;
-		Box<? super Numberc> b4 = b1;
+		Box<? super Number> b4 = b1;
 	}
 
 }
