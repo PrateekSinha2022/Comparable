@@ -52,7 +52,7 @@ public class Employee implements Comparable<Employee>{
 	@Override
 	public int compareTo(Employee e) {
 		// TODO Auto-generated method stub
-		return (e.id-this.id);
+		return (this.id-e.id);//will sort in ascending order but print method is printing in reverse order
 	}
 
 }

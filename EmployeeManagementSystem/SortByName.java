@@ -11,7 +11,7 @@ public class SortByName implements Comparator<Employee>{
 	public int compare(Employee o1, Employee o2) {
 		// TODO Auto-generated method stub
 		
-		return o2.getName().compareTo(o1.getName());
+		return o1.getName().compareTo(o2.getName());
 		//return 0;
 	}
 }
